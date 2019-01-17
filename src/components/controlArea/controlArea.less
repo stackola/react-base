@@ -1,7 +1,14 @@
 @import "../../variables.less";
 .controlArea{
 	background: red;
-	flex:1;
-	max-width:@containerWidth;
-	flex-basis: @containerWidth;
+	width:@containerWidth;
+	height:@containerWidth;
+	transform: rotate(20deg);
+	border-radius: 50%;	
+	.angleButton{
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background: blue;
+	}
 }

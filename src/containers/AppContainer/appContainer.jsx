@@ -19,13 +19,7 @@ export default class AppContainer extends Component {
     //We can access the redux store via our props. The available variables are defined in mapStateToProps() in this file
     return (
       <div styleName={"main"}>
-        <div styleName="spacer" />
-        <div styleName="row">
-          <div styleName="spacer" />
           <ControlArea/>
-          <div styleName="spacer" />
-        </div>
-        <div styleName="spacer" />
       </div>
     );
   }
