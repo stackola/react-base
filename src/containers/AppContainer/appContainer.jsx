@@ -5,7 +5,7 @@ import style from "./appContainer.less";
 import { Route, Link, withRouter, Switch, Redirect } from "react-router-dom";
 
 import Header from "components/header";
-import InputBox from "components/inputBox";
+import ControlArea from "components/controlArea";
 
 @withRouter
 @CSSModules(style, { allowMultiple: true, handleNotFoundStyleName: "log" })
@@ -19,8 +19,13 @@ export default class AppContainer extends Component {
     //We can access the redux store via our props. The available variables are defined in mapStateToProps() in this file
     return (
       <div styleName={"main"}>
-        <Header />
-        <InputBox />
+        <div styleName="spacer" />
+        <div styleName="row">
+          <div styleName="spacer" />
+          <ControlArea/>
+          <div styleName="spacer" />
+        </div>
+        <div styleName="spacer" />
       </div>
     );
   }
